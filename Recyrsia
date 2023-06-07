@@ -1,0 +1,68 @@
+//задача1 
+// Задайте значение N. Напишите программу которая выведит все инатуральные числа в диапазоне от1 до N.
+
+// void ShowNam(int n)
+// {
+//    if (n > 0)
+//    {
+//       System.Console.Write(n + " ");// выводит до вызова рекурсии
+//       ShowNam(n - 1);
+//       System.Console.WriteLine();
+//       System.Console.Write(n + " ");//выводит после окончания рекурсии
+//    }
+// }
+// ShowNam(5);
+
+//Задание 2. Напишите программу, которая 
+//будет принимать на вход число и возвращать
+//сумму его цифр.
+
+//453 -> 12
+//45 -> 9
+// int SumNum(int n)
+// {
+//    if (n > 0)
+//    {
+//       return SumNum(n / 10) + n % 10;
+//    }
+//    else return n;
+// }
+// int sum = SumNum(6935);
+// Console.WriteLine(sum);
+
+//Задача 3. Задайте значения M и N.
+//  Напишите программу, которая выведет все 
+//  натуральные числа в промежутке от M до N.
+
+//M = 1; N = 5. -> "1, 2, 3, 4, 5"
+//M = 4; N = 8. -> "4, 5, 6, 7, 8"
+
+// void ShowNam(int m, int n)
+// {
+//    if (n > m)
+//    {
+//       ShowNam(n - 1, m);
+//       System.Console.Write(m + " ");//выводит после окончания рекурсии
+//    }
+//    else if (m > n)
+//    {
+//       ShowNam(m - 1, n);
+//       System.Console.Write(m + " ");
+//    }
+//    else System.Console.Write(n + " ");
+// }
+// ShowNam(7, 7);
+
+//Задача 4.Напишите программу, которая на 
+//  вход принимает два числа A и B, и возводит 
+//  число А в целую степень B с помощью рекурсии.
+
+// int Power(int pow, int num)
+// {
+//    if (pow > 1)
+//    {
+//       return Power(pow - 1, num) * num;
+//    }
+//    else return num;
+// }
+// Console.WriteLine(Power(3, 2));
